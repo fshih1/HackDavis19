@@ -2,7 +2,6 @@ $( document ).ready(function() {
     
     $('.btn').on('click', function() {
     	// $('button').removeClass('active');
-    	console.log('hi')
     	$(this).addClass('active');
     	getInput()
 	})
@@ -16,6 +15,11 @@ $('#debugSelector').click(function() {
     	console.log($("#info1").val())
 })
 
+$('#show-results').click(function() {
+    	// $('button').removeClass('active');
+    	getInput()
+    	console.log($("#info1").val())
+})
 
 function getInput(){
 
@@ -30,6 +34,9 @@ function getInput(){
 	list.push($("#info4").val())
 	list.push($("#info5").val())
 	list.push($("#info6").val())
+	list.push($("#info7").val())
+	list.push($("#info8").val())
+	list.push($("#info9").val())
 
 	// var e = document.getElementById("info2");
 	// var strUser = e.options[e.selectedIndex].value;
