@@ -12,7 +12,7 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="interface.js"></script>
+      
     </head>
     <body style = "background: url(background.jpg); background-size:100%">
 
@@ -27,10 +27,9 @@
         <a href="#" class="btn btn-danger active" role="button" aria-pressed="false">Cryptococcal meningitis</a>
     </div>
 
-
     <div class="form-group m-5 w-25 p-3">
 
-        <label for="info1" color="white">Information 1 (select 1 to 10):</label>
+        <label for="info1" color="white">Clump Thickness (select 1 to 10):</label>
             <select class="form-control " id="info1">
               <option>1</option>
               <option>2</option>
@@ -44,7 +43,7 @@
               <option>10</option>
             </select>
 
-        <label for="info2">Information 2 (select 1 to 10):</label>
+        <label for="info2">Uniformity of Cell Size (select 1 to 10):</label>
             <select class="form-control" id="info2">
               <option>1</option>
               <option>2</option>
@@ -58,7 +57,7 @@
               <option>10</option>
             </select>
 
-        <label for="info3">Information 3 (select 1 to 10):</label>
+        <label for="info3">Uniformity of Cell Shape (select 1 to 10):</label>
             <select class="form-control" id="info3">
               <option>1</option>
               <option>2</option>
@@ -72,7 +71,7 @@
               <option>10</option>
             </select>
 
-        <label for="info4">Information 4 (select 1 to 10):</label>
+        <label for="info4">Marginal Adhesion (select 1 to 10):</label>
             <select class="form-control" id="info4">
               <option>1</option>
               <option>2</option>
@@ -85,7 +84,7 @@
               <option>9</option>
               <option>10</option>
             </select>
-        <label for="info5">Information 5 (select 1 to 10):</label>
+        <label for="info5">Single Epithelial Cell Size (select 1 to 10):</label>
             <select class="form-control" id="info5">
               <option>1</option>
               <option>2</option>
@@ -99,7 +98,7 @@
               <option>10</option>
             </select>
 
-        <label for="info6">Information 6 (select 1 to 10):</label>
+        <label for="info6">Bare Nuclei (select 1 to 10):</label>
             <select class="form-control" id="info6">
               <option>1</option>
               <option>2</option>
@@ -112,8 +111,52 @@
               <option>9</option>
               <option>10</option>
             </select>
-    </div>
 
+          <label for="info7">Bland Chromatin (select 1 to 10):</label>
+            <select class="form-control" id="info7">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+          <label for="info8">Normal Nucleoli (select 1 to 10):</label>
+            <select class="form-control" id="info8">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+          <label for="info9">Mitoses (select 1 to 10):</label>
+            <select class="form-control" id="info9">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+    </div>
+    <button id="show-results">CLICK ME</button>
+
+<script type="text/javascript" src="interface.js"></script>
 </body>
 
 
