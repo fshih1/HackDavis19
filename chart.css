@@ -14,7 +14,21 @@
 
 .topleftcont {
   position: absolute;
-  top: 50px;
+  top: 75px;
   left: 20px;
   right: 1000px;
+}
+
+.bottomcenter {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centeredbottom {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

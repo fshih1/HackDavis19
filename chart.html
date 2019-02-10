@@ -2,6 +2,7 @@
 <html>
   <head>
     <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="interface.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 <link rel="stylesheet" href="chart.css">
 <!-- Bootstrap core CSS -->
@@ -17,16 +18,25 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
   </head>
+  <body style="background-color:#99bbff";
   <body>
   <div class="container">
     <canvas id="doughnutChart" class="left"></canvas>
-  <div>
-    <b
-       style="font-size:86px" class="centered">12%
-    </b>
-  </div>
+  <div><b style="font-size:86px" class="centered">12% </b></div>
+  <div><b style="font-size:18px" class="bottomcenter">Patient is 12% likely to have Breast Cancer</b></div>
+  <a href="interface2.html"><button id="show-results" type="button" class="btn btn-primary mt-3 btn-lg btn-block centeredbottom">New Diagnosis</button></a>
   <b style="font-size:36px" class="topleft">Breast Cancer </b>
-  <b style="font-size:18px" class="topleftcont">Breast cancer is caused by </b>
+  <b style="font-size:18px" class="topleftcont">Breast cancer is a type of cancer that forms in breast cells.
+     Common symptoms include:
+     <ul>
+  <li>Breast lump or thickening</li>
+  <li>Change in size, shape, or appearance</li>
+  <li>Changes to skin over breast</li>
+  <li>Newly inverted pimple</li>
+  <li>Peeling, scaling, crusting or flaking of the pigmented area of skin surrounding the nipple (areola) or breast skin</li>
+  <li>Redness or pitting of the skin</li>
+</ul>
+   </b>
 </div>
   </body>
   <script type="text/javascript" src="chart.js"></script>
