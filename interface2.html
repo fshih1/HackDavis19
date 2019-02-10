@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <title>AutoDiagnosis</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="interface.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    </head>
+    <body style = "background: url(background.jpg); background-size:100%">
+
+    <div class="container m-5">
+        <h2 class = "m-2 pb-3">Auto Diagnosis</h2>
+        <a href="#" class="btn btn active" role="button" aria-pressed="false">Breast Cancer</a>
+        <a href="#" class="btn btn-outline-primary active" role="button" aria-pressed="false">Brain Cancer</a>
+        <a href="#" class="btn btn-primary active" role="button" aria-pressed="false">Diabete</a>
+        <a href="#" class="btn btn-success active" role="button" aria-pressed="false">Herpes</a>
+        <a href="#" class="btn btn-info active" role="button" aria-pressed="false">Small Pox</a>
+        <a href="#" class="btn btn-warning active" role="button" aria-pressed="false">African trypanosomiasis</a>
+        <a href="#" class="btn btn-danger active" role="button" aria-pressed="false">Cryptococcal meningitis</a>
+    </div>
+
+    <div class="form-group m-5 w-25 p-3">
+
+        <label for="info1" color="white">Clump Thickness (select 1 to 10):</label>
+            <select class="form-control " id="info1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+        <label for="info2">Uniformity of Cell Size (select 1 to 10):</label>
+            <select class="form-control" id="info2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+        <label for="info3">Uniformity of Cell Shape (select 1 to 10):</label>
+            <select class="form-control" id="info3">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+        <label for="info4">Marginal Adhesion (select 1 to 10):</label>
+            <select class="form-control" id="info4">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+        <label for="info5">Single Epithelial Cell Size (select 1 to 10):</label>
+            <select class="form-control" id="info5">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+        <label for="info6">Bare Nuclei (select 1 to 10):</label>
+            <select class="form-control" id="info6">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+          <label for="info7">Bland Chromatin (select 1 to 10):</label>
+            <select class="form-control" id="info7">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+          <label for="info8">Normal Nucleoli (select 1 to 10):</label>
+            <select class="form-control" id="info8">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+
+          <label for="info9">Mitoses (select 1 to 10):</label>
+            <select class="form-control" id="info9">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+        <a href="transition.html"><button id="show-results" type="button" class="btn btn-primary mt-3 btn-lg btn-block">Submit</button></a>
+    </div>
+
+<script type="text/javascript" src="interface.js"></script>
+</body>
+
+
+</html>
